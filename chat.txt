@@ -1,0 +1,647 @@
+For TEXORA, I would keep the first website simple, credible, and proof-focused. People who may collaborate with you usually want to answer four questions quickly: Who are you? What can you build? What have you already done? Why should they trust you?
+
+A good first version can be a single-page site or a small 5–7 page website. Based on your background, I recommend this structure:
+
+Home / Hero section
+Put the main message immediately at the top.
+
+Example:
+
+TEXORA — Software Development Team from Japan
+We are a five-member engineering team building AI, full-stack, mobile, and blockchain products for startups and businesses worldwide.
+Founded by Kenji Suzuki, Senior Software Engineer with 8 years of development experience.
+
+Add two clear buttons such as View Our Work and Work With Us.
+
+About TEXORA
+Briefly explain the team and why you are expanding globally.
+
+Example:
+
+TEXORA is a five-member software development team based in Japan. Our team combines experience across AI, web, mobile, blockchain, backend systems, and software architecture. After working primarily in the Japanese market, we are now building long-term relationships with clients and partners internationally.
+
+Keep this section short. Do not write a long company story yet.
+
+Core Services / Skills
+I would present four primary areas:
+
+AI & Automation — AI agents, LLM integration, RAG, workflow automation, intelligent SaaS
+Full-Stack Development — React, Next.js, Node.js, Python, APIs, SaaS platforms, dashboards
+Mobile Development — React Native, Flutter, backend integration, payments, notifications
+Blockchain & Web3 — smart contracts, wallets, DeFi, token systems, blockchain integrations
+
+Under that, you can show a smaller Technology Stack section with technologies such as React, Next.js, TypeScript, Python, FastAPI, Node.js, PostgreSQL, Solidity, Rust, AWS, Docker, and others that your team actually uses.
+
+Projects / Case Studies
+This will probably be the most important part of the site.
+
+Do not only show screenshots. For each strong project, use a format like:
+
+AI Automation Platform
+Problem: The client needed to automate a manual business workflow.
+Solution: TEXORA developed an AI-powered platform using Python, FastAPI, React, and LLM integration.
+Our Role: Architecture, backend, frontend, AI integration, deployment.
+Technology: React, Python, FastAPI, PostgreSQL, AWS.
+Result: Reduced manual processing and created a scalable workflow.
+
+Ideally start with 4–6 strong projects, not 20 weak ones.
+
+I would divide them by category:
+
+AI / automation
+SaaS / full-stack
+Mobile
+Blockchain
+Enterprise / internal systems
+
+If a project is confidential, write something like “Enterprise client — name confidential” instead of inventing or exposing information.
+
+Team
+Show the five team members.
+
+For each:
+
+Photo
+Name
+Role
+1–2 sentence background
+Main skills
+LinkedIn / GitHub if appropriate
+
+Your profile could be:
+
+Kenji Suzuki — Founder & Senior Software Engineer
+Senior software engineer with 8 years of experience in full-stack development, AI systems, blockchain, and software architecture. Leads technical strategy, architecture, and project delivery at TEXORA.
+
+Your existing CV already supports a strong founder profile around full-stack, AI, blockchain, cloud, and architecture work.
+
+How We Work
+This is useful for international clients who have never worked with your team.
+
+Keep it simple:
+
+1. Discovery — Understand the business problem and requirements
+2. Planning — Define architecture, scope, timeline, and milestones
+3. Development — Build in short development cycles
+4. Review — Regular demos and client feedback
+5. Delivery — Testing, deployment, documentation, and support
+
+You can also mention:
+
+Remote collaboration
+English communication
+GitHub-based development
+Regular progress updates
+Flexible engagement models
+Why TEXORA
+Avoid generic claims like “best developers” or “world-class team.” Use concrete reasons instead:
+Five-engineer senior development team
+Japan-based engineering background
+AI + full-stack + mobile + blockchain under one team
+End-to-end product development
+Suitable for MVPs and long-term development
+Direct access to technical leadership
+International remote collaboration
+
+Partnership / Global Collaboration
+Because you are actively looking for international partners, I would give this its own section.
+
+Example:
+
+Global Collaboration
+TEXORA is expanding beyond Japan and building long-term partnerships with developers, business professionals, agencies, and technology companies in other countries.
+
+We can provide technical architecture and development, while partners may contribute local market knowledge, client relationships, sales, communication, or complementary expertise.
+
+Then add:
+
+Interested in collaborating with TEXORA? Contact us.
+
+Supporting Materials / Resources
+Since people are already asking you for supporting materials, make these easy to access:
+
+Company/team profile PDF
+Founder CV
+Team capability document
+Portfolio / project PDF
+GitHub
+Technical demos
+Architecture diagrams
+Case studies
+
+I would avoid putting private contracts or sensitive client documents on the public website.
+
+Contact
+Keep this very easy:
+Email
+LinkedIn
+GitHub
+Contact form
+Location: Japan
+Optional Discord if you use it professionally
+
+For the first version, the navigation could simply be:
+
+Home | Services | Projects | Team | Partnership | About | Contact
+
+I would also recommend building the site around evidence rather than marketing language. For example, showing an architecture diagram, GitHub project, product screenshot, short case study, and the technologies used will normally create more trust than paragraphs saying that TEXORA is “innovative” or “high quality.”
+
+For the technical implementation, a very practical setup would be Next.js + TypeScript + Tailwind CSS, deployed on Vercel. Keep all project/team data in simple JSON or Markdown initially, so you do not need a CMS. Add a CMS later only if the team starts updating content frequently.
+
+Yes, we plan to adopt a Japanese-style design to evoke the feel of a Japanese development team, use both Japanese and English, and implement Light and Dark modes.
+The site is intended to have a bright, fresh, and friendly atmosphere.
+Please come up with a design concept for it.
+
+A strong direction for TEXORA would be a modern Japanese technology aesthetic rather than a traditional “Japan-themed” website. The goal should be to feel unmistakably Japanese through restraint, spacing, typography, rhythm, and subtle cultural references—without relying heavily on cherry blossoms, torii gates, or stereotypical imagery.
+
+Design Concept: “Modern Japan, Global Technology”
+
+The visual identity should combine three ideas:
+
+Japanese precision — clean grids, careful spacing, minimal clutter
+Friendly technology — bright surfaces, soft shapes, approachable illustrations
+Global readiness — bilingual content, modern SaaS layout, strong portfolio presentation
+
+The site should feel like a Japanese engineering studio that is technically serious but easy to work with.
+
+1. Overall visual direction
+
+Use a spacious layout with a lot of white space in Light mode and deep charcoal surfaces in Dark mode.
+
+The design language should use:
+
+thin borders
+rounded cards
+subtle shadows
+large typography
+clean geometric layouts
+occasional Japanese-inspired line patterns
+soft animations rather than flashy effects
+
+A good visual reference is the balance between a Japanese editorial website and a modern SaaS landing page.
+
+Avoid making the design too corporate. TEXORA should feel like a small, skilled engineering team, not a large consulting company.
+
+2. Color system
+
+I would use a restrained Japanese-inspired palette.
+
+Light mode
+
+Background
+
+Warm white: #FAFAF7
+
+Primary text
+
+Ink black: #1B1B1B
+
+Secondary text
+
+Gray: #666666
+
+Primary accent
+
+Japanese indigo: #315A7D
+
+Secondary accent
+
+Fresh mint / matcha-inspired green: #7CAF8A
+
+Highlight
+
+Soft coral/red: #E96B63
+
+The red should be used very carefully—for small accents, buttons, status dots, or decorative marks.
+
+Dark mode
+
+Background
+
+Deep charcoal: #111315
+
+Cards
+
+#191C1F
+
+Primary text
+
+#F5F5F2
+
+Secondary text
+
+#A8ADB3
+
+Accent blue
+
+#6B9CC4
+
+Accent green
+
+#8FC89A
+
+This gives Dark mode a calm Japanese-night atmosphere instead of pure black.
+
+3. Typography
+
+Typography will make a big difference because the site is bilingual.
+
+For English:
+
+Inter
+Manrope
+Geist
+Noto Sans
+
+For Japanese:
+
+Noto Sans JP
+Zen Kaku Gothic New
+
+My preferred combination:
+
+English: Geist
+Japanese: Noto Sans JP
+
+Use the same visual hierarchy in both languages.
+
+For example:
+
+TEXORA
+Build technology with Japanese precision.
+
+Japanese:
+
+TEXORA
+日本の技術力で、世界へ。
+
+Headings can be bold and modern, while body text should remain light and very readable.
+
+4. Japanese character without clichés
+
+Instead of obvious Japanese imagery, use subtle motifs.
+
+For example:
+
+Seigaiha-inspired line patterns
+Very faint geometric wave patterns in section backgrounds.
+
+Grid systems inspired by shoji screens
+Use thin lines to divide content sections.
+
+Hanko-style marks
+A small red square containing T or テ could become a TEXORA brand element.
+
+Vertical Japanese text
+Occasionally use a small vertical label beside sections:
+
+技術
+TEAM
+PROJECTS
+
+This can add a strong Japanese feel without overwhelming the page.
+
+Enso-inspired circle
+A simple circular brush-like element could appear behind the hero illustration or logo.
+
+Keep these decorative elements subtle.
+
+5. Hero section
+
+The hero should immediately communicate three things:
+
+Japan + Engineering + Global Collaboration
+
+Possible layout:
+
+────────────────────────────────────
+
+TEXORA                              EN / 日本語
+                                    Light / Dark
+
+日本から、世界へ。
+Engineering from Japan, for the world.
+
+We are a five-member development team
+building AI, Full-Stack, Mobile and
+Blockchain products.
+
+[ View Projects ]   [ Work With TEXORA ]
+
+                         ┌─────────────┐
+                         │ abstract    │
+                         │ Japanese    │
+                         │ technology  │
+                         │ visual      │
+                         └─────────────┘
+
+Tokyo, Japan
+Global Remote Development
+
+────────────────────────────────────
+
+I would make:
+
+日本から、世界へ。
+
+one of the main brand phrases.
+
+English underneath:
+
+From Japan to the world.
+
+That fits TEXORA's current transition very naturally.
+
+6. Hero visual
+
+Instead of a generic developer stock photo, use a custom abstract illustration.
+
+Imagine:
+
+a modern Japanese city grid
+connected nodes
+subtle wave patterns
+software architecture lines
+geometric shapes
+small kanji labels
+glowing digital points
+
+It should communicate:
+
+Japan × software × global connectivity
+
+For Light mode, make it bright and airy.
+
+For Dark mode, the same illustration can become a subtle glowing network.
+
+7. Navigation
+
+Keep it minimal:
+
+TEXORA
+
+About
+Services
+Projects
+Team
+Partnership
+Contact
+
+EN | 日本語
+☀ / ☾
+
+On mobile:
+
+TEXORA      EN    ☾    ☰
+
+The language switch and theme switch should always be visible.
+
+8. Services design
+
+Instead of normal corporate service cards, use four large interactive cards.
+
+01
+AI & Automation
+AI agents, RAG, LLM integration
+and workflow automation
+
+02
+Full-Stack
+Modern SaaS, APIs, dashboards
+and scalable platforms
+
+03
+Mobile
+Cross-platform mobile products
+for iOS and Android
+
+04
+Blockchain
+Smart contracts, Web3 platforms,
+wallets and decentralized systems
+
+On hover, the cards can gently expand or reveal additional technology tags.
+
+For example:
+
+Python FastAPI React OpenAI PostgreSQL
+
+9. Project showcase
+
+This should visually be one of the strongest sections.
+
+Use large horizontal project cards.
+
+Example:
+
+AI AUTOMATION / 2026
+
+Enterprise AI Workflow Platform
+
+AI-powered automation platform designed
+to reduce manual operational work.
+
+[ React ] [ FastAPI ] [ AI ] [ AWS ]
+
+                           Project image
+                           or dashboard
+
+View Case Study →
+
+Alternate the layouts:
+
+Image | Text
+Text  | Image
+Image | Text
+
+This makes the page feel editorial and premium.
+
+10. Team section
+
+Because TEXORA is only five people, make the team feel personal.
+
+Instead of formal corporate employee cards, use friendly portraits with simple information.
+
+[ Photo ]
+
+Kenji Suzuki
+Founder / Senior Software Engineer
+
+AI · Full-Stack · Blockchain
+System Architecture
+
+Tokyo, Japan
+
+GitHub ↗   LinkedIn ↗
+
+For all five members, show:
+
+photo
+name
+role
+specialty
+location
+GitHub / LinkedIn if available
+
+This will significantly increase trust when approaching European or US partners.
+
+11. Global collaboration section
+
+I would create a visually distinctive section near the bottom.
+
+Large heading:
+
+日本から、世界のパートナーへ。
+
+Then:
+
+Building long-term partnerships worldwide.
+
+Show a simple map with lines extending from Japan to:
+
+France
+Europe
+United States
+Asia
+
+Do not make it look like TEXORA already has offices there. The visual should communicate collaboration and expansion, not physical locations.
+
+Text:
+
+TEXORA is expanding beyond Japan and looking for long-term relationships with developers, agencies, founders, and business partners around the world.
+
+Buttons:
+
+Partner With TEXORA
+
+Start a Project
+
+12. Light / Dark transition
+
+The switch should feel polished.
+
+For example:
+
+☀  Light
+☾  Dark
+
+Do not instantly flash between themes.
+
+Use approximately a 200–300 ms transition for:
+
+background
+text
+borders
+illustrations
+
+You can also slightly change the Japanese decorative patterns between modes.
+
+Light mode:
+
+soft paper / daylight feeling
+
+Dark mode:
+
+Tokyo-at-night / digital engineering feeling
+13. Bilingual UX
+
+I recommend full language switching, rather than putting Japanese and English paragraphs beside each other everywhere.
+
+Default:
+
+EN | 日本語
+
+URLs could eventually be:
+
+texora.jp/en
+texora.jp/ja
+
+or:
+
+/en/projects
+/ja/projects
+
+Do not use automatic machine translation for important portfolio content. Write the primary English copy naturally and maintain a proper Japanese version.
+
+14. Small Japanese UI details
+
+Small touches can make the site memorable.
+
+For example, section labels:
+
+01 / 私たちについて
+ABOUT
+
+02 / 技術
+SERVICES
+
+03 / 実績
+PROJECTS
+
+04 / チーム
+TEAM
+
+05 / パートナーシップ
+PARTNERSHIP
+
+This gives the site a Japanese identity without making the entire interface difficult for international visitors.
+
+15. Recommended homepage flow
+
+I would build the homepage in this exact order:
+
+Navbar
+↓
+Hero
+From Japan to the World
+↓
+About TEXORA
+↓
+4 Core Services
+AI / Full-Stack / Mobile / Blockchain
+↓
+Selected Projects
+↓
+Technology Stack
+↓
+Meet the Team
+↓
+How We Work
+↓
+Global Partnership
+↓
+Supporting Materials
+↓
+Contact
+↓
+Footer
+
+This keeps the website focused on what potential clients and partners actually want to verify.
+
+16. Brand direction
+
+A simple identity could use:
+
+TEXORA
+テクソラ
+
+with a small red seal-like mark:
+
+┌───┐
+│ T │
+└───┘
+
+or Japanese-inspired:
+
+┌───┐
+│ テ │
+└───┘
+
+Then:
+
+TEXORA
+Engineering from Japan.
+
+That would be clean, memorable, and very easy to use across the website, GitHub, proposal PDFs, LinkedIn, and project documents.
+
+The key design principle should be: Japanese identity through precision and restraint, not decoration. That will make TEXORA feel modern, trustworthy, technically capable, and genuinely Japanese while still being comfortable for global clients.

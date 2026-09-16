@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------
+   TEXORA design tokens — "Modern Japan, Global Technology"
+   Light: warm paper. Dark: Tokyo night (navy, never pure black).
+------------------------------------------------------------------ */
+:root {
+  color-scheme: light;
+
+  --bg: #fafaf7;
+  --bg-alt: #f2f3ef;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+
+  --border: #e4e4dd;
+  --border-strong: #d3d3ca;
+
+  --fg: #1b1b1b;
+  --fg-muted: #666666;
+  --fg-subtle: #8c8c85;
+
+  --primary: #13458b;
+  --primary-hover: #0e3468;
+  --primary-fg: #ffffff;
+  --primary-soft: #e9f0fa;
+
+  --accent: #315a7d;
+  --green: #5f9c72;
+  --green-soft: #e4f1e8;
+  --coral: #e96b63;
+  --seal: #ae1017;
+
+  --link: #13458b;
+  --link-hover: #0e3468;
+  --ring: #13458b;
+  --elevation-card: 0 1px 2px rgba(27, 27, 27, 0.04), 0 8px 24px -12px rgba(27, 27, 27, 0.12);
+  --elevation-card-hover: 0 2px 4px rgba(27, 27, 27, 0.05), 0 18px 40px -16px rgba(19, 69, 139, 0.22);
+  --pattern: #13458b;
+
+  /* Named separately from the Tailwind theme keys below, so the @theme entries
+     can point at these without defining a variable in terms of itself. */
+  --ease-jp: cubic-bezier(0.22, 1, 0.36, 1);
+  --serif-stack: var(--font-eb-garamond), "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans-stack: var(--font-geist-sans), "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", system-ui,
+    sans-serif;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --bg: #0e1a26;
+  --bg-alt: #0b1520;
+  --surface: #14212e;
+  --surface-raised: #182735;
+
+  --border: #23313f;
+  --border-strong: #31424f;
+
+  --fg: #f5f5f2;
+  --fg-muted: #a8adb3;
+  --fg-subtle: #7d8791;
+
+  --primary: #1d5aa8;
+  --primary-hover: #2a6cc0;
+  --primary-fg: #ffffff;
+  --primary-soft: #16304b;
+
+  --accent: #6b9cc4;
+  --green: #8fc89a;
+  --green-soft: #17322a;
+  --coral: #f08a83;
+  --seal: #cf3b35;
+
+  --link: #7fb2d9;
+  --link-hover: #9cc6e6;
+  --ring: #6b9cc4;
+  --elevation-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -16px rgba(0, 0, 0, 0.6);
+  --elevation-card-hover: 0 2px 6px rgba(0, 0, 0, 0.45), 0 22px 48px -18px rgba(0, 0, 0, 0.7);
+  --pattern: #6b9cc4;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-subtle: var(--fg-subtle);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-fg: var(--primary-fg);
+  --color-primary-soft: var(--primary-soft);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --color-accent: var(--accent);
+  --color-matcha: var(--green);
+  --color-matcha-soft: var(--green-soft);
+  --color-coral: var(--coral);
+  --color-seal: var(--seal);
+
+  --font-serif: var(--serif-stack);
+  --font-sans: var(--sans-stack);
+
+  --shadow-card: var(--elevation-card);
+  --shadow-card-hover: var(--elevation-card-hover);
+
+  --ease-japanese: var(--ease-jp);
+}
+
+/* Japanese locale leads with the JP faces so mixed runs stay optically even. */
+html[lang="ja"] {
+  --serif-stack: "Noto Serif JP", var(--font-eb-garamond), "Hiragino Mincho ProN", serif;
+  --sans-stack: "Noto Sans JP", var(--font-geist-sans), "Hiragino Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--serif-stack);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    /* 200–300ms theme crossfade, never an instant flash. */
+    transition: background-color 260ms var(--ease-jp), color 260ms var(--ease-jp);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--primary) 18%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  /* Balanced wrapping splits Japanese mid-phrase; normal wrapping honours 、and 。 */
+  h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja) {
+    text-wrap: normal;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Japanese copy reads better slightly looser and without tight tracking. */
+  :lang(ja) {
+    letter-spacing: 0.01em;
+    line-break: strict;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: 78rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .shell { padding-inline: 2rem; }
+  }
+
+  @media (min-width: 1280px) {
+    .shell { padding-inline: 2.5rem; }
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-strong) 18%, var(--border-strong) 82%, transparent);
+  }
+}
+
+/* ---------------- Japanese motifs ---------------- */
+
+/* Seigaiha — overlapping waves, kept at a whisper. */
+.motif-seigaiha {
+  background-image: radial-gradient(circle at 50% 100%, transparent 62%, color-mix(in srgb, var(--pattern) 40%, transparent) 63%, color-mix(in srgb, var(--pattern) 40%, transparent) 65%, transparent 66%);
+  background-size: 56px 28px;
+  background-position: 0 0;
+  opacity: 0.16;
+}
+
+/* Shoji — thin lattice grid used to structure large empty areas. */
+.motif-shoji {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--pattern) 30%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--pattern) 30%, transparent) 1px, transparent 1px);
+  background-size: 88px 88px;
+  opacity: 0.08;
+}
+
+.vertical-jp {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.22em;
+}
+
+/* ---------------- Motion ---------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms var(--ease-jp), transform 700ms var(--ease-jp);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes drift {
+  from { stroke-dashoffset: 260; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse-node {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.35); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-marquee { animation: none; }
+
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------------- Hero illustration palette ---------------- */
+:root {
+  --hv-sky-1: #eef3fa;
+  --hv-sky-2: #f6f7f4;
+  --hv-sky-3: #fdfdfb;
+  --hv-fuji-1: #aec3dc;
+  --hv-fuji-2: #dde6f0;
+  --hv-snow: #ffffff;
+  --hv-city-1: #9fb3cc;
+  --hv-city-2: #cdd9e8;
+  --hv-window: #ffffff;
+  --hv-tower: #8496b0;
+  --hv-spire: #aebdd0;
+  --hv-branch: #c8a79e;
+  --hv-sakura: #f2c3cb;
+  --hv-line: #4d7bb5;
+  --hv-node: #13458b;
+  --hv-label: #1b2a45;
+  --hv-label-soft: #5d6b80;
+  --hv-glow: #ffffff;
+}
+
+.dark {
+  --hv-sky-1: #0a1522;
+  --hv-sky-2: #0f2136;
+  --hv-sky-3: #14314f;
+  --hv-fuji-1: #1b3a5c;
+  --hv-fuji-2: #0f2438;
+  --hv-snow: #dfe9f5;
+  --hv-city-1: #16324f;
+  --hv-city-2: #0c1d30;
+  --hv-window: #ffd9a1;
+  --hv-tower: #e0724f;
+  --hv-spire: #52708f;
+  --hv-branch: #6b4f52;
+  --hv-sakura: #e59aa8;
+  --hv-line: #8ec5f0;
+  --hv-node: #8ec5f0;
+  --hv-label: #e7eef7;
+  --hv-label-soft: #9fb3c9;
+  --hv-glow: #1d5488;
+}
